@@ -1,3 +1,4 @@
+// mobile and some tablets
 @media screen and (max-width: 768px) {
     .course, .job {
         flex-direction: column-reverse;
@@ -9,6 +10,7 @@
     }
 }
 
+// mobile
 @media screen and (max-width: 600px) {
     #main-wrap {
         padding: 1rem;
@@ -41,6 +43,7 @@
     }
 }
 
+// mobile and smaller mobile
 @media screen and (max-width: 500px) {
     #top-block {        
         h1 {

@@ -6,6 +6,7 @@
     box-sizing: border-box;
 }
 
+// color variables
 $light: #fcfcfc;
 
 $yellow: #ffe121;
@@ -14,12 +15,12 @@ $hotpink: #FF69B4;
 
 $azure: #007fff;
 
-@keyframes bounce {
+@keyframes bounce { // bouncing animation used for list arrows
     from { transform: translateY(0); }
     to { transform: translateY(1rem); }
 }
 
-@mixin highlighter($color) {
+@mixin highlighter($color) { // highligher style mixin
     display: inline-block;
     position: relative;
     z-index: 0;

@@ -1,3 +1,4 @@
+// menu
 nav {
     ul {
         display: flex;
@@ -37,6 +38,7 @@ nav {
     }
 }
 
+// top section with background and title
 #top-block {
     margin: 0 auto;
     display: flex;
@@ -59,18 +61,21 @@ nav {
     }
 }
 
+// main wrapper
 #main-wrap {
     margin: 0 auto;
     padding: 2rem;
     width: 100%;
     max-width: 1200px;
     background-color: $light;
+
+    section {
+        margin-top: 10vh;
+    }
 }
 
-section {
-    margin-top: 10vh;
-}
 
+// general list style
 .list {
     overflow: hidden;
     transition: max-height 1s ease-in;
@@ -98,6 +103,7 @@ section {
     }
 }
 
+// style for course and job lists
 .course, .job {
     display: flex;
     margin: 1rem 0;
@@ -110,6 +116,7 @@ section {
     }
 }
 
+// style for site list
 .site {
     margin: 1rem 0;
     display: flex;
@@ -119,6 +126,7 @@ section {
     }
 }
 
+// list toggle styles
 .toggle-list {
     transition: transform .5s linear;
     padding: .5rem;
@@ -143,6 +151,7 @@ section {
     }
 }
 
+// footer
 footer {
     background-color: #000;
     color: $light;
