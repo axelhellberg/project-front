@@ -1,0 +1,56 @@
+@media screen and (max-width: 768px) {
+    .course, .job {
+        flex-direction: column-reverse;
+
+        .dates {
+            flex-direction: row;
+            margin-top: 0.33rem;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #main-wrap {
+        padding: 1rem;
+    }
+
+    nav {
+        ul {
+            flex-direction: column;
+            li {
+                margin: 0 !important;
+                a {
+                    padding-top: 1rem;
+                    margin-bottom: 1rem;
+                    display: flex;
+
+                    &:after {
+                        opacity: 1 !important;
+                        width: 100% !important;
+                    }
+
+                    &:active {
+                        &:after {
+                            opacity: 0 !important;
+                            width: 0 !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #top-block {        
+        h1 {
+            white-space: normal;
+            top: 75%;
+            min-width: 270px;
+            text-align: center;
+        }
+        background-position: center -50px;
+        background-size: cover;
+        height: 400px;
+    }
+}
