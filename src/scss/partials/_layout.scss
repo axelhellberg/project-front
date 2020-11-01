@@ -58,7 +58,7 @@
         position: absolute;
         height: 50px;
         width: 100%;
-        background: linear-gradient(0deg, $light 15%, transparentize($light, 1));  
+        background: linear-gradient(0deg, $light, transparentize($light, 1));  
         visibility: hidden;
     }
 }
