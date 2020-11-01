@@ -40,6 +40,20 @@
                 }
             }
         }
+        &.hidden {
+            ul {
+                max-height: 0px;
+                transition: max-height .5s;
+
+            }
+        }
+    }
+
+    .menu-btn {
+        animation: bounce .25s;
+        animation-direction: alternate;
+        animation-iteration-count: 2;
+        display: block;
     }
 }
 
