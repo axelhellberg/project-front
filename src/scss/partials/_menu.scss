@@ -1,0 +1,114 @@
+// menu
+#main-menu {
+    ul {
+        display: flex;
+        list-style: none;
+        margin: 2rem 0;
+        padding: 0;
+        user-select: none;
+        transition: max-height 1s;
+        max-height: 500px;
+        overflow: hidden;
+
+        li {
+            line-height: 20px;
+
+            &:not(:last-child) {
+                margin-right: 2rem;
+            }
+
+            a {
+                text-decoration: none;
+                color: #000;
+                font-weight: bold;
+                z-index: 0;
+
+                @include highlighter($yellow);
+
+                &:hover {
+                    &:after {
+                        width: 100% !important;
+                        opacity: 1;
+                    }
+                }
+
+                &:after {
+                    width: 0 !important;
+                    opacity: 0;
+                }
+            }
+        }
+    }
+}
+
+// menu toggle
+.menu-btn {
+    display: none;
+    padding: 2rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+
+    #menu-btn-inner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 28px;
+        width: 32px;
+        pointer-events: none;
+
+        span {
+            top: 0;
+            position: absolute;
+            height: 4px;
+            width: 32px;
+            background-color: $azure;
+            border-radius: 2px;
+            transition: all .2s ease-out;
+
+            &:nth-child(2) {
+                top: 12px;
+            }
+
+            &:nth-child(3) {
+                top: 24px;
+            }
+        }
+    }
+
+    &.close {
+        #menu-btn-inner {
+            span {
+                &:nth-child(1) {
+                    top: 12px;
+                }
+
+                &:nth-child(2) {
+                    visibility: hidden;
+                }
+
+                &:nth-child(3) {
+                    top: 12px;
+                }
+            }
+        }
+    }
+    
+    &.rotate {
+        #menu-btn-inner {
+            span {
+                background-color: $hotpink;
+
+                &:nth-child(1) {
+                    transform: rotate(45deg);
+                }
+
+                &:nth-child(3) {
+                    transform: rotate(-45deg);                    
+                }
+            }
+        }
+    }
+}

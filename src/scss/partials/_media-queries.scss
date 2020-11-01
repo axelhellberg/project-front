@@ -14,17 +14,19 @@
 @media screen and (max-width: 600px) {
     #main-wrap {
         padding: 1rem;
+        padding-top: 0;
     }
 
-    nav {
+    #main-menu {
         ul {
             flex-direction: column;
+            margin: 0;
             li {
                 margin: 0 !important;
                 a {
                     padding-top: 1rem;
                     margin-bottom: 1rem;
-                    display: flex;
+                    display: block;
 
                     &:after {
                         opacity: 1 !important;
