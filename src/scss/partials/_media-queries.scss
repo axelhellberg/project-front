@@ -6,6 +6,12 @@
         .dates {
             flex-direction: row;
             margin-top: 0.33rem;
+
+            span {
+                &:nth-child(2) {
+                    margin-left: .25em;
+                }
+            }
         }
     }
 }
@@ -46,7 +52,6 @@
             ul {
                 max-height: 0px;
                 transition: max-height .5s;
-
             }
         }
     }
